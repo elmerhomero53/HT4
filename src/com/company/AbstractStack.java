@@ -1,5 +1,4 @@
 package com.company;
 
-public interface AbstractStack<E> {
-
+public interface AbstractStack<E> implements iPila<E> {
 }
