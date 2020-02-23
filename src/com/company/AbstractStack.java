@@ -1,35 +1,43 @@
 package com.company;
 
-public abstract class AbstractStack<E> implements iPila<E> {
+public class AbstractStack<E> implements iPila<E> {
     /**
-     * pre: el stack no debe estar vacio<p>
-     * post: el item mas recientemente metido al stack se saca primero.
+     * @param item : valor que se desea ingresar al stack
      */
     @Override
-    public abstract E pop();
+    public void push(E item) {
+
+    }
+
     /**
-     * pre: el stack no esta vacio
-     * post: el valor del tope a ser sacado es returnado
-     * @return el objeto del tope
+     * @return valor que se ingreso de ultimo al stack y que en el metodo se eliminó
      */
     @Override
-    public abstract E peek();
+    public E pop() {
+        return null;
+    }
+
     /**
-     * pre: ninguna<p>
-     * post: retorna true si el stack no tiene elementos.
-     * @return true o false
+     * @return valor que se ingreso de ultimo al stack
+     */
+    @Override
+    public E peek() {
+        return null;
+    }
+
+    /**
+     * @return si el stack está vacío o no
      */
     @Override
     public boolean empty() {
-        return size() == 0;
-    }
-    /**
-     * post: se retorna el numero de elementos del stack
-     * @return un entero
-     */
-    @Override
-    public int size()    {
-        return size();
+        return false;
     }
 
+    /**
+     * @return valor entero del tamaño del stack
+     */
+    @Override
+    public int size() {
+        return 0;
+    }
 }

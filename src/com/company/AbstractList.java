@@ -1,60 +1,18 @@
 package com.company;
 
 public abstract class AbstractList<E> implements iLista<E> {
-    /**
-     * @return devuelve el tamano
-     */
-    @Override
-    public int size() {
-        return 0;
-    }
 
     /**
-     * @return esta o no esta vacio
+     * constructor vacio
+     */
+    public AbstractList(){
+    }
+    /**
+     * @return true si esta vacia
      */
     @Override
     public boolean isEmpty() {
-        return false;
-    }
-
-    /**
-     * @param value el valor
-     */
-    @Override
-    public void addFirst(E value) {
-
-    }
-
-    /**
-     * @param value el valor
-     */
-    @Override
-    public void addLast(E value) {
-
-    }
-
-    /**
-     * @return el valor obtenido
-     */
-    @Override
-    public E getFirst() {
-        return null;
-    }
-
-    /**
-     * @return el primer valor que es el removido
-     */
-    @Override
-    public E removeFirst() {
-        return null;
-    }
-
-    /**
-     * @return el ultimo valor que es el removido
-     */
-    @Override
-    public E removeLast() {
-        return null;
+        return size()==0;
     }
 
     /**
@@ -66,20 +24,4 @@ public abstract class AbstractList<E> implements iLista<E> {
         return false;
     }
 
-    /**
-     * @param value el valor
-     * @return posicion del valor
-     */
-    @Override
-    public int indexOf(E value) {
-        return 0;
-    }
-
-    /**
-     * @return el valors
-     */
-    @Override
-    public E peek() {
-        return null;
-    }
 }
