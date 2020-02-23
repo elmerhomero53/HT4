@@ -1,15 +1,41 @@
 package com.company;
 
 public interface iPila<E> {
-    public abstract E pop();
+    /**
+     *
+     * @param item: valor que se desea ingresar al stack
+     */
+    public void push(E item);
+    // pre:
+    // post: item is added to stack
+    // will be popped next if no intervening push
 
-    public abstract E peek();
+    /**
+     *
+     * @return valor que se ingreso de ultimo al stack y que en el metodo se eliminó
+     */
+    public E pop();
+    // pre: stack is not empty
+    // post: most recently pushed item is removed and returned
 
-    public boolean empty() {
-        return size() == 0;
-    }
+    /**
+     *
+     * @return valor que se ingreso de ultimo al stack
+     */
+    public E peek();
+    // pre: stack is not empty
+    // post: top value (next to be popped) is returned
 
-    public int size() {
-        return size();
-    }
+    /**
+     *
+     * @return si el stack está vacío o no
+     */
+    public boolean empty();
+    // post: returns true if and only if the stack is empty
+
+    /**
+     *
+     * @return valor entero del tamaño del stack
+     */
+    public int size();
 }
