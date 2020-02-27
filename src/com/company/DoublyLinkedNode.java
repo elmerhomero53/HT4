@@ -26,7 +26,7 @@ public class DoublyLinkedNode<E>{
     public DoublyLinkedNode<E> next()   {
         return nextElement;
     }
-    
+
     public DoublyLinkedNode<E> previous()   {
         return previousElement;
     }
