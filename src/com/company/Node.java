@@ -29,3 +29,4 @@ public class Node<E> {
         data = value;
     }
 }
+|
