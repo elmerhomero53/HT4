@@ -1,6 +1,6 @@
 package com.company;
 
-public class AbstractStack<E> implements iPila<E> {
+public abstract class AbstractStack<E> implements iPila<E> {
     /**
      * @param item : valor que se desea ingresar al stack
      */
