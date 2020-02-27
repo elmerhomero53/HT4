@@ -1,11 +1,14 @@
 package com.company;
 
-public class Calculadora
+public abstract class Calculadora
         implements iCalculadora{
     static boolean INSTANCE_FLAG = false;
 
 
-    //Se aplica el Singleton
+    /**
+     * Se aplica el Singleton
+     * @throws SingletonException
+     */
     public Calculadora() throws SingletonException
     {
         if (INSTANCE_FLAG)
@@ -20,12 +23,12 @@ public class Calculadora
     }
 
     @Override
-    public double sumar(double a, double b) {
+    public double suma(double a, double b) {
         return a+b;
     }
 
     @Override
-    public double restar(double a, double b) {
+    public double resta(double a, double b) {
         return a-b;
     }
 
